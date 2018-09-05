@@ -33,7 +33,7 @@ class InstanceProfileProvider
      */
     public function __construct(array $config = [])
     {
-        $this->timeout = isset($config['timeout']) ? $config['timeout'] : 1.0;
+        $this->timeout = isset($config['timeout']) ? $config['timeout'] : 5.0;
         $this->profile = isset($config['profile']) ? $config['profile'] : null;
         $this->client = isset($config['client'])
             ? $config['client'] // internal use only
