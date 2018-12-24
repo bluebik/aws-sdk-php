@@ -139,9 +139,9 @@ class CredentialProvider
 
             // Create the initial promise that will be used as the cached value
             // until it expires.
-            if (null === $result) {
+            //if (null === $result) {
                 $result = $provider();
-            }
+            //}
 
             // Return credentials that could expire and refresh when needed.
             return $result
